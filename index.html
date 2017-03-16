@@ -4,14 +4,18 @@
 <meta charset="utf-8">
 <title>我的个人网站</title>
 <link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/video-js.min.css" rel="stylesheet" type="text/css">
+<link href="css/custom-video.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 <div id="container">
-    <div id="intro">
-    <h1>我的个人网站</h1>
-    <p>微博 | QQ空间 | 关于我</p>
-    </div>
+  <video width="480" height="272" controls class="video-js vjs-default-skin" data-setup="{}">
+    <source src="video/wuren.mp4" type="video/mp4">
+  </video>
 </div>
+
+<script type="text/javascript" src="js/video.min.js"></script>
+
 </body>
 </html>

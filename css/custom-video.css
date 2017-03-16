@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+.video-js {
+   font-size: 10px;
+   color: #fff;
+   margin:0 auto;
+}
+
+
+.vjs-default-skin .vjs-big-play-button {
+  font-size: 3em;
+  line-height: 2em;
+  height: 2em;
+  width: 2em;
+  /* 0.06666em = 2px default */
+  border: 0.06666em solid #fff;
+  /* 0.3em = 9px default */
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  margin-left: -1.5em;
+  margin-top: -0.75em;
+}
+
+
+.video-js .vjs-control-bar,
+.video-js .vjs-big-play-button,
+.video-js .vjs-menu-button .vjs-menu-content {
+  /* IE8 - has no alpha support */
+  background-color: #2B333F;
+  /* Opacity: 1.0 = 100%, 0.0 = 0% */
+  background-color: rgba(43, 51, 63, 0.7);
+}
+
+/* Slider - used for Volume bar and Progress bar */
+.video-js .vjs-slider {
+  background-color: #73859f;
+  background-color: rgba(115, 133, 159, 0.5);
+}
+
+
+.video-js .vjs-volume-level,
+.video-js .vjs-play-progress,
+.video-js .vjs-slider-bar {
+  background: #fff;
+}
+
+
+.video-js .vjs-load-progress {
+  /* For IE8 we'll lighten the color */
+  background: ligthen(#73859f, 25%);
+  /* Otherwise we'll rely on stacked opacities */
+  background: rgba(115, 133, 159, 0.5);
+}
+
+.video-js .vjs-load-progress div {
+  /* For IE8 we'll lighten the color */
+  background: ligthen(#73859f, 50%);
+  /* Otherwise we'll rely on stacked opacities */
+  background: rgba(115, 133, 159, 0.75);
+}
